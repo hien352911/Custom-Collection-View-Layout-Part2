@@ -21,6 +21,7 @@
 		8B9A7ACF24A5D11200B0A009 /* DIYLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9A7ACE24A5D11200B0A009 /* DIYLayout.swift */; };
 		8B9A7AD224A5E67400B0A009 /* CCVL05-DIY-Adding-Depth-LectureSlides.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B9A7AD124A5E67400B0A009 /* CCVL05-DIY-Adding-Depth-LectureSlides.pdf */; };
 		8B9A7AD424A5E67A00B0A009 /* CCVL05-DIY-Adding-Depth-Challenge-D.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B9A7AD324A5E67A00B0A009 /* CCVL05-DIY-Adding-Depth-Challenge-D.pdf */; };
+		8B9A7AD724A5EFB000B0A009 /* CCVL06-DIY-Limiting-Stretch-LectureSlides.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B9A7AD624A5EFB000B0A009 /* CCVL06-DIY-Limiting-Stretch-LectureSlides.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		8B9A7ACE24A5D11200B0A009 /* DIYLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYLayout.swift; sourceTree = "<group>"; };
 		8B9A7AD124A5E67400B0A009 /* CCVL05-DIY-Adding-Depth-LectureSlides.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "CCVL05-DIY-Adding-Depth-LectureSlides.pdf"; sourceTree = "<group>"; };
 		8B9A7AD324A5E67A00B0A009 /* CCVL05-DIY-Adding-Depth-Challenge-D.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "CCVL05-DIY-Adding-Depth-Challenge-D.pdf"; sourceTree = "<group>"; };
+		8B9A7AD624A5EFB000B0A009 /* CCVL06-DIY-Limiting-Stretch-LectureSlides.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "CCVL06-DIY-Limiting-Stretch-LectureSlides.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		8B9A7AC824A5CFB200B0A009 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				8B9A7AD524A5EFA700B0A009 /* 7.DIY – Limiting Stretch */,
 				8B9A7AD024A5E65700B0A009 /* 6.DIY – Adding Depth */,
 				8B9A7AC924A5CFBA00B0A009 /* 5.DIY – Stretchy Headers */,
 			);
@@ -177,6 +180,14 @@
 				8B9A7AD324A5E67A00B0A009 /* CCVL05-DIY-Adding-Depth-Challenge-D.pdf */,
 			);
 			name = "6.DIY – Adding Depth";
+			sourceTree = "<group>";
+		};
+		8B9A7AD524A5EFA700B0A009 /* 7.DIY – Limiting Stretch */ = {
+			isa = PBXGroup;
+			children = (
+				8B9A7AD624A5EFB000B0A009 /* CCVL06-DIY-Limiting-Stretch-LectureSlides.pdf */,
+			);
+			name = "7.DIY – Limiting Stretch";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B9A7AD224A5E67400B0A009 /* CCVL05-DIY-Adding-Depth-LectureSlides.pdf in Resources */,
+				8B9A7AD724A5EFB000B0A009 /* CCVL06-DIY-Limiting-Stretch-LectureSlides.pdf in Resources */,
 				7B46CF671AAF4EA0006A5089 /* Sessions.plist in Resources */,
 				7B46CF661AAF4EA0006A5089 /* Images.xcassets in Resources */,
 				7B46CF3F1AAF4B27006A5089 /* Main.storyboard in Resources */,
