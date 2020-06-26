@@ -8,12 +8,35 @@
 
 import UIKit
 
+class DIYLayoutAttributes: UICollectionViewLayoutAttributes {
+    
+    var deltaY: CGFloat = 0
+    
+    override func copy(with zone: NSZone? = nil) -> Any {
+        let copy = super.copy(with: zone) as! DIYLayoutAttributes
+        copy.deltaY = deltaY
+        return copy
+    }
+    
+    override func isEqual(_ object: Any?) -> Bool {
+        if let attributes = object as? DIYLayoutAttributes {
+            if attributes.deltaY == deltaY {
+                return super.isEqual(object)
+            }
+        }
+        return false
+    }
+}
 
 // UICollectionViewLayout no support for headers or footers
 class DIYLayout: UICollectionViewFlowLayout {
     
+    override class var layoutAttributesClass: AnyClass {
+        return DIYLayoutAttributes.self
+    }
+    
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        let layoutAttributes = super.layoutAttributesForElements(in: rect)!
+        let layoutAttributes = super.layoutAttributesForElements(in: rect) as! [DIYLayoutAttributes]
         
         let insets = collectionView!.contentInset
         let offset = collectionView!.contentOffset
@@ -31,6 +54,7 @@ class DIYLayout: UICollectionViewFlowLayout {
                         frame.origin.y = frame.minY - deltaY
                         
                         attributes.frame = frame
+                        attributes.deltaY = deltaY
                     }
                 }
             }
