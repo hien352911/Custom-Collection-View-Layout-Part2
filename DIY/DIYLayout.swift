@@ -31,6 +31,8 @@ class DIYLayoutAttributes: UICollectionViewLayoutAttributes {
 // UICollectionViewLayout no support for headers or footers
 class DIYLayout: UICollectionViewFlowLayout {
     
+    var maximumStretchHeight: CGFloat = 0
+    
     override class var layoutAttributesClass: AnyClass {
         return DIYLayoutAttributes.self
     }
@@ -49,7 +51,7 @@ class DIYLayout: UICollectionViewFlowLayout {
                 if let elementKind = attributes.representedElementKind {
                     if elementKind == UICollectionView.elementKindSectionHeader {
                         var frame = attributes.frame
-                        frame.size.height = max(minY, headerReferenceSize.height + deltaY)
+                        frame.size.height = min(max(minY, headerReferenceSize.height + deltaY), maximumStretchHeight)
                         // Comment dòng dưới sẽ hiểu vì sao cần update origin
                         frame.origin.y = frame.minY - deltaY
                         

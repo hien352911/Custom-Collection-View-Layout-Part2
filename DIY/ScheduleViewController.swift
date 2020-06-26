@@ -23,6 +23,7 @@ class ScheduleViewController: UICollectionViewController {
     let layout = DIYLayout()
     layout.headerReferenceSize = CGSize(width: width, height: 180)
     layout.itemSize = CGSize(width: width, height: 62)
+    layout.maximumStretchHeight = width
     collectionView.collectionViewLayout = layout
     
     collectionView!.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)

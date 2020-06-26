@@ -17,6 +17,7 @@ class ScheduleHeaderView: UICollectionReusableView {
   
     private var backgroundImageViewHeight: CGFloat = 0
     private var foregroundImageViewHeight: CGFloat = 0
+    private var previousHeight: CGFloat = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,9 +30,15 @@ class ScheduleHeaderView: UICollectionReusableView {
         super.apply(layoutAttributes)
         
         let attributes = layoutAttributes as! DIYLayoutAttributes
-        // Nhỏ vào
-        backgroundImageViewHeightLayoutConstraint.constant = backgroundImageViewHeight - attributes.deltaY
-        // To ra
-        foregroundImageViewHeightLayoutConstraint.constant = foregroundImageViewHeight + attributes.deltaY
+        
+        let height = attributes.frame.height
+        
+        if previousHeight != height {
+            // Nhỏ vào
+            backgroundImageViewHeightLayoutConstraint.constant = backgroundImageViewHeight - attributes.deltaY
+            // To ra
+            foregroundImageViewHeightLayoutConstraint.constant = foregroundImageViewHeight + attributes.deltaY
+            previousHeight = height
+        }
     }
 }
