@@ -18,6 +18,7 @@
 		7B46CF701AAF5160006A5089 /* ScheduleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B46CF6F1AAF5160006A5089 /* ScheduleHeaderView.swift */; };
 		8B9A7ACB24A5CFD200B0A009 /* CCVL04-DIY-01-LectureSlides.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B9A7ACA24A5CFD200B0A009 /* CCVL04-DIY-01-LectureSlides.pdf */; };
 		8B9A7ACD24A5CFD900B0A009 /* CCVL04-DIY-01-Challenge-C.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B9A7ACC24A5CFD900B0A009 /* CCVL04-DIY-01-Challenge-C.pdf */; };
+		8B9A7ACF24A5D11200B0A009 /* DIYLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9A7ACE24A5D11200B0A009 /* DIYLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7B46CF6F1AAF5160006A5089 /* ScheduleHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleHeaderView.swift; sourceTree = "<group>"; };
 		8B9A7ACA24A5CFD200B0A009 /* CCVL04-DIY-01-LectureSlides.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "CCVL04-DIY-01-LectureSlides.pdf"; sourceTree = "<group>"; };
 		8B9A7ACC24A5CFD900B0A009 /* CCVL04-DIY-01-Challenge-C.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "CCVL04-DIY-01-Challenge-C.pdf"; sourceTree = "<group>"; };
+		8B9A7ACE24A5D11200B0A009 /* DIYLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		7B46CF5C1AAF4BBA006A5089 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				8B9A7ACE24A5D11200B0A009 /* DIYLayout.swift */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			files = (
 				7B46CF621AAF4E27006A5089 /* ScheduleCell.swift in Sources */,
 				7B46CF3A1AAF4B27006A5089 /* AppDelegate.swift in Sources */,
+				8B9A7ACF24A5D11200B0A009 /* DIYLayout.swift in Sources */,
 				7B46CF701AAF5160006A5089 /* ScheduleHeaderView.swift in Sources */,
 				7B46CF6B1AAF4F07006A5089 /* Session.swift in Sources */,
 				7B46CF6E1AAF5001006A5089 /* ScheduleViewController.swift in Sources */,
